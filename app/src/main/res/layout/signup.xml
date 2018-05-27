@@ -13,6 +13,7 @@
         android:layout_marginLeft="156dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="Profile Picture"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@mipmap/ic_launcher_round" />
@@ -121,11 +122,11 @@
 
     <Spinner
         android:id="@+id/genderSpinner"
-        android:layout_width="395dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="9dp"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
         android:entries="?attr/actionModeCloseDrawable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />

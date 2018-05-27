@@ -31,17 +31,11 @@ public class MainActivity extends AppCompatActivity {
         testSignupViewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.signup);
+                Intent it = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(it);
             }
         });
     }
 
-
-
-    public void initizalizeBtn(){
-        String buttonID = "imageButtonCreateJob";
-        int resourceID = getResources().getIdentifier(buttonID, "id", getPackageName());
-        ImageButton b = ((ImageButton) findViewById(resourceID));
-    }
 
 }

@@ -6,15 +6,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class SignupActivity extends AppCompatActivity {
-
+    private Spinner genders;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
+        loadGenders();
 
-        Spinner genders = (Spinner) findViewById(R.id.genderSpinner);
+    }
 
+    private void loadGenders() {
+        genders = findViewById(R.id.genderSpinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.genders, android.R.layout.simple_spinner_item
@@ -22,6 +25,5 @@ public class SignupActivity extends AppCompatActivity {
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genders.setAdapter(adapter);
-
     }
 }
