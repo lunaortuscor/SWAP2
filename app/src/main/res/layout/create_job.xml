@@ -9,25 +9,181 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
         android:background="@android:color/background_light"
         android:text="Cancel"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="166dp"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
         android:background="@android:color/background_light"
         android:text="Save"
-        app:layout_constraintStart_toEndOf="@+id/button1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Create Job"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        tools:text="Create Job" />
+
+    <ImageButton
+        android:id="@+id/photoButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginStart="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Medical Condition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoButton" />
+
+    <EditText
+        android:id="@+id/languageText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <EditText
+        android:id="@+id/priceText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price (per hour)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+    <Button
+        android:id="@+id/friendButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:background="@android:color/darker_gray"
+        android:text="Befriender"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceText" />
+
+    <Button
+        android:id="@+id/careButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:text="Caregiver"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/friendButton"
+        app:layout_constraintTop_toBottomOf="@+id/priceText" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendButton" />
+
+    <EditText
+        android:id="@+id/startTimeText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Start Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <EditText
+        android:id="@+id/endTimeText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="End Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeText" />
+
+    <EditText
+        android:id="@+id/raceText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Race, Religion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageText" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age, Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raceText" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeText" />
+
 </android.support.constraint.ConstraintLayout>

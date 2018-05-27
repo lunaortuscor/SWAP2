@@ -1,8 +1,8 @@
 package com.example.russell.swap4;
 
 public class Employer {
-    public String identifier;
-    public char gender;
+    private String identifier;
+    private char gender;
 
     public Employer(){
 
