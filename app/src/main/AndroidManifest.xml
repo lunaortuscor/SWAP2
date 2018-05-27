@@ -40,6 +40,13 @@
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.russell.swap4.ViewProfileActivity"
+            android:label="Your Profile">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
