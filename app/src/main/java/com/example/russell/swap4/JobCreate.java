@@ -10,8 +10,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class JobCreate extends AppCompatActivity {
-    private Button cancel;
-    private Button save;
+    private Button cancelButton;
+    private Button saveButton;
     private TextView textView1;
     private ImageButton photoButton;
     private EditText descriptionText;
@@ -57,7 +57,7 @@ public class JobCreate extends AppCompatActivity {
                 }
             }
         });
-
+        final Button save = findViewById(R.id.saveButton);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

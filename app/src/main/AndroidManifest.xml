@@ -21,7 +21,7 @@
 
         <activity
             android:name="com.example.russell.swap4.JobCreate"
-            android:label="SWAP4">
+            android:label="SWAP4:JobCreate">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
