@@ -2,11 +2,15 @@ package com.example.russell.swap4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 
 public class JobCreate extends AppCompatActivity {
+    private Button cancel;
+    private Button save;
+
     @Override
-    protected void onCreate(Bundle savedInstancetate){
-        super.onCreate(savedInstancetate);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.create_job);
     }
 }

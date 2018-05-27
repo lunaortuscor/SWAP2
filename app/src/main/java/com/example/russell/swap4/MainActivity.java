@@ -1,5 +1,6 @@
 package com.example.russell.swap4;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         imageButtonCreateJob.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, JobCreate.class);
+                startActivity(intent);
                 //whatever to do
             }
         });
