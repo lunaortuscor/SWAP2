@@ -21,21 +21,21 @@
 
         <activity
             android:name="com.example.russell.swap4.JobCreate"
-            android:label="SWAP4">
+            android:label="Create Job">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity android:name="com.example.russell.swap4.SignupActivity"
-            android:label="SWAP4:Signup">
+            android:label="Sign Up">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
 
         <activity android:name="com.example.russell.swap4.GenderSelectActivity"
-            android:label="SWAP4:Signup:genderSelect">
+            android:label="Select Gender">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
