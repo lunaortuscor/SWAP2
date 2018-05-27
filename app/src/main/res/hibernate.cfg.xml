@@ -16,6 +16,14 @@
             jdbc://mysql://localhost/rafaelIsDumb
         </property>
 
+        <property name="hibernate.connection.username">
+            rafael_soh_69420
+        </property>
 
+        <property name="hibernate.connection.password">
+            iLoveSchool123
+        </property>
+
+        <mapping resource="User.hbm.xml" />
     </session-factory>
 </hibernate-configuration>
