@@ -2,6 +2,7 @@ package com.example.russell.swap4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -20,10 +21,29 @@ public class JobCreate extends AppCompatActivity {
     private EditText dateText;
     private EditText startTimeText;
     private EditText endTimeText;
+    private EditText raceText;
+    private EditText ageText;
+    private EditText addressText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_job);
+
+        final Button friendButton = findViewById(R.id.friendButton);
+        final Button careButton = findViewById(R.id.careButton);
+        friendButton.setOnClickListener(new View.OnClickListener(){
+           public void onClick(View v){
+
+           }
+        });
+
+        careButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+
+
     }
 }

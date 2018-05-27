@@ -9,35 +9,32 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
         android:background="@android:color/background_light"
         android:text="Cancel"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginLeft="166dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
         android:background="@android:color/background_light"
         android:text="Save"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="405dp"
-        android:layout_height="46dp"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:gravity="center_vertical|center_horizontal"
@@ -64,19 +61,19 @@
     <EditText
         android:id="@+id/descriptionText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Description"
+        android:text="Medical Condition"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/photoButton" />
 
     <EditText
         android:id="@+id/languageText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:ems="10"
@@ -88,17 +85,19 @@
     <EditText
         android:id="@+id/priceText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Price (per hour)"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/languageText" />
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
 
     <Button
         android:id="@+id/friendButton"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:background="@android:color/darker_gray"
@@ -110,7 +109,7 @@
     <Button
         android:id="@+id/careButton"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:background="@android:color/darker_gray"
         android:text="Caregiver"
         android:textSize="18sp"
@@ -120,7 +119,7 @@
     <EditText
         android:id="@+id/dateText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="date"
         android:text="Date"
@@ -130,7 +129,7 @@
     <EditText
         android:id="@+id/startTimeText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:ems="10"
@@ -142,7 +141,7 @@
     <EditText
         android:id="@+id/endTimeText"
         android:layout_width="400dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginStart="2dp"
         android:ems="10"
@@ -150,5 +149,41 @@
         android:text="End Time"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startTimeText" />
+
+    <EditText
+        android:id="@+id/raceText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Race, Religion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageText" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age, Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raceText" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeText" />
 
 </android.support.constraint.ConstraintLayout>
