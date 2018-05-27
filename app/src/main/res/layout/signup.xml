@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="96dp"
@@ -41,10 +41,10 @@
         android:hint="@string/input_email"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="96dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="96dp"
@@ -67,6 +67,67 @@
         android:hint="@string/input_address"
         android:inputType="textPostalAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/input_birthday"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/input_mobile_phone"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/input_username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/app_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="395dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:entries="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
 </android.support.constraint.ConstraintLayout>

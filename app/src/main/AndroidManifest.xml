@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.russell.swap4.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,15 @@
         </activity>
 
         <activity
-            android:name=".JobCreate"
+            android:name="com.example.russell.swap4.JobCreate"
             android:label="SWAP4">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.russell.swap4.SignupActivity"
+            android:label="SWAP4:Signup">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>

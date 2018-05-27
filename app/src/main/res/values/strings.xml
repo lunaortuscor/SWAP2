@@ -19,4 +19,17 @@
     <string name="input_address">Address</string>
     <string name="input_birthday">Birthday</string>
     <string name="input_mobile_phone">Mobile number</string>
+
+
+    <string-array name="genders">
+        <item>Heretosexual male</item>
+        <item>Heretosexual female</item>
+        <item>Gay</item>
+        <item>Lesbian</item>
+        <item>Transgender</item>
+        <item>Bisexual</item>
+        <item>Queer</item>
+        <item>Intersex</item>
+        <item>Aseuxal</item>
+    </string-array>
 </resources>
