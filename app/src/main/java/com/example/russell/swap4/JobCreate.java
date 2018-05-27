@@ -15,6 +15,11 @@ public class JobCreate extends AppCompatActivity {
     private EditText descriptionText;
     private EditText languageText;
     private EditText priceText;
+    private Button friendButon;
+    private Button careButton;
+    private EditText dateText;
+    private EditText startTimeText;
+    private EditText endTimeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
