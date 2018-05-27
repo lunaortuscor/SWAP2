@@ -37,7 +37,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="291dp" />
+        tools:layout_editor_absoluteY="272dp" />
 
     <EditText
         android:id="@+id/editText2"
