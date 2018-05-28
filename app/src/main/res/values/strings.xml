@@ -19,6 +19,7 @@
     <string name="input_address">Address</string>
     <string name="input_birthday">Birthday</string>
     <string name="input_mobile_phone">Mobile number</string>
+    <string name="test_signup_view">Test signup view</string>
 
 
     <string-array name="genders">

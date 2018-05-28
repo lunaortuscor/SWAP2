@@ -1,4 +1,4 @@
-package com.example.russell.swap4;
+package org.swapproject.swapdroid;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

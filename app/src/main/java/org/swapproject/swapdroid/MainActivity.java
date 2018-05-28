@@ -1,4 +1,4 @@
-package com.example.russell.swap4;
+package org.swapproject.swapdroid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.russell.swap4.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,22 +20,16 @@ public class MainActivity extends AppCompatActivity {
         final ImageButton imageBtnCreateJob = findViewById(R.id.imageButtonCreateJob);
 
         //System.out.println(imageButtonCreateJob);
-        imageBtnCreateJob.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, JobCreate.class);
-                startActivity(intent);
-            }
+        imageBtnCreateJob.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, JobCreate.class);
+            startActivity(intent);
         });
 
 
         final Button testSignupViewBtn = findViewById(R.id.testSignupView);
-        testSignupViewBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this, SignupActivity.class);
-                startActivity(it);
-            }
+        testSignupViewBtn.setOnClickListener(view -> {
+            Intent it = new Intent(MainActivity.this, SignupActivity.class);
+            startActivity(it);
         });
     }
 

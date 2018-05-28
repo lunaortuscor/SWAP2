@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintBottom_toTopOf="parent"
-    tools:context=".MainActivity">
+    tools:context="org.swapproject.swapdroid.MainActivity">
 
     <Button
         android:id="@+id/testSignupView"
@@ -16,7 +16,7 @@
         android:layout_marginLeft="128dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="128dp"
-        android:text="Test signup view"
+        android:text="@string/test_signup_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

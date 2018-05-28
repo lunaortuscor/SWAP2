@@ -1,4 +1,4 @@
-package com.example.russell.swap4;
+package org.swapproject.swapdroid;
 
 public class Employer {
     private String identifier;
