@@ -8,7 +8,6 @@ import android.widget.Spinner;
 import com.example.russell.swap4.R;
 
 public class SignupActivity extends AppCompatActivity {
-    private Spinner genders;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +18,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void loadGenders() {
-        genders = findViewById(R.id.genderSpinner);
+        Spinner genders = findViewById(R.id.genderSpinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.genders, android.R.layout.simple_spinner_item
