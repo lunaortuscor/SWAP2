@@ -1,16 +1,15 @@
-package org.swapproject.swapdroid;
+package org.swapproject.swapdroid.object;
 
-public class Helper {
+public class Employer {
     private String identifier;
     private char gender;
 
-    public Helper(){
+    public Employer(){
 
     }
-
-    public Helper(String identifier, char gender){
+    public Employer(String identifier, char gender){
         this.identifier = identifier;
-        if(gender == 'M' || gender == 'F'){
+        if(gender == 'M' || gender == 'F') {
             this.gender = gender;
         }
     }
@@ -22,4 +21,5 @@ public class Helper {
     public char getGender(){
         return this.gender;
     }
+
 }

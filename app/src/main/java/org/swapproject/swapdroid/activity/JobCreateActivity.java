@@ -1,4 +1,4 @@
-package org.swapproject.swapdroid;
+package org.swapproject.swapdroid.activity;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.russell.swap4.R;
 
-public class JobCreate extends AppCompatActivity {
+public class JobCreateActivity extends AppCompatActivity {
     private Button cancelButton;
     private Button saveButton;
     private TextView textView1;

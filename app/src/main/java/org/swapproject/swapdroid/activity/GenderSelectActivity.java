@@ -1,4 +1,4 @@
-package org.swapproject.swapdroid;
+package org.swapproject.swapdroid.activity;
 
 import android.app.Activity;
 import android.view.View;

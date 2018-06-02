@@ -1,4 +1,4 @@
-package org.swapproject.swapdroid;
+package org.swapproject.swapdroid.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +12,6 @@ public class ViewProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
     }
-
 
 
 }

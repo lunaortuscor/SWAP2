@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintBottom_toTopOf="parent"
-    tools:context="org.swapproject.swapdroid.MainActivity">
+    tools:context="org.swapproject.swapdroid.activity.MainActivity">
 
     <Button
         android:id="@+id/testSignupView"

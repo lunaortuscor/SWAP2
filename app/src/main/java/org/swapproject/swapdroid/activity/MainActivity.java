@@ -1,9 +1,8 @@
-package org.swapproject.swapdroid;
+package org.swapproject.swapdroid.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         //System.out.println(imageButtonCreateJob);
         imageBtnCreateJob.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, JobCreate.class);
+            Intent intent = new Intent(MainActivity.this, JobCreateActivity.class);
             startActivity(intent);
         });
 
