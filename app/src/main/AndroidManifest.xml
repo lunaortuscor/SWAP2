@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme"
         android:allowBackup="false">
         <activity
-            android:name="org.swapproject.swapdroid.MainActivity"
+            android:name="org.swapproject.swapdroid.activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,32 +21,32 @@
         </activity>
 
         <activity
-            android:name="org.swapproject.swapdroid.JobCreate"
+            android:name="org.swapproject.swapdroid.activity.JobCreateActivity"
             android:label="Create Job"
-            android:parentActivityName="org.swapproject.swapdroid.MainActivity" >
+            android:parentActivityName="org.swapproject.swapdroid.activity.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.swapproject.swapdroid.MainActivity" />
+                android:value="org.swapproject.swapdroid.activity.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="org.swapproject.swapdroid.SignupActivity"
+        <activity android:name="org.swapproject.swapdroid.activity.SignupActivity"
             android:label="Sign Up">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="org.swapproject.swapdroid.GenderSelectActivity"
+        <activity android:name="org.swapproject.swapdroid.activity.GenderSelectActivity"
             android:label="Select Gender">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="org.swapproject.swapdroid.ViewProfileActivity"
+        <activity android:name="org.swapproject.swapdroid.activity.ViewProfileActivity"
             android:label="Your Profile">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
