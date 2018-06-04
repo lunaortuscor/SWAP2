@@ -10,15 +10,6 @@ import android.view.View.OnClickListener;
 import com.example.russell.swap4.R;
 
 public class SignupActivity extends AppCompatActivity implements OnClickListener {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
-
-        loadGenders();
-
-    }
-
     private void loadGenders() {
         Spinner genders = findViewById(R.id.genderSpinner);
 
@@ -30,6 +21,16 @@ public class SignupActivity extends AppCompatActivity implements OnClickListener
         genders.setAdapter(adapter);
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.signup);
+
+        loadGenders();
+
+    }
+
 
 
     @Override
@@ -37,6 +38,7 @@ public class SignupActivity extends AppCompatActivity implements OnClickListener
         switch (view.getId()) {
             case R.id.signupBtn:
                 // make POST request to our server
+
 
         }
     }
