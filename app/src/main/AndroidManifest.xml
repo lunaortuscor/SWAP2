@@ -22,7 +22,11 @@
 
         <activity
             android:name="org.swapproject.swapdroid.activity.JobCreateActivity"
-            android:label="Create Job">
+            android:label="Create Job"
+            android:parentActivityName="org.swapproject.swapdroid.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.swapproject.swapdroid.activity.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>

@@ -56,7 +56,12 @@ public class JobCreateActivity extends AppCompatActivity {
             }
         });
         final Button save = findViewById(R.id.saveButton);
-        save.setOnClickListener(view -> {
+        save.setOnClickListener(v -> {
+
+        });
+
+        final Button cancelButton = findViewById(R.id.cancelButton);
+        cancelButton.setOnClickListener(v -> {
 
         });
     }
